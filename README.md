@@ -23,14 +23,14 @@ To make using RedirectTracker as seamless as possible, you can set up a quick fu
     - Copy and paste the following function into your **`.zshrc`** file:
         
         ```
-        shCopy code
         function eurl() {
             http --body YOUR_WORKER_URL X-Target-URL:"$1"
         }
         
         ```
 
-    - Replace **`YOUR_WORKER_URL`** with the URL of your deployed Cloudflare Worker.
+    - Replace YOUR_WORKER_URL with the URL of your deployed Cloudflare Worker. This example assumes you have httpie installed.
+
 3. **Reload Your `.zshrc`:**
     - Apply the changes by running **`source ~/.zshrc`** in your terminal.
 
